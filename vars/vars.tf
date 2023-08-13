@@ -25,9 +25,13 @@ variable "domain" {
   ]
 }
 # access list variables
+#output "domain" {
+#  value = var.domain[0]
+#}
 output "domain" {
-  value = var.domain[0]
+  value = " name of the domain is ${ var.domain[0] }"
 }
+
 
 # map varables
 variable "course" {
