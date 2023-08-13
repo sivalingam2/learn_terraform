@@ -43,9 +43,9 @@ variable "course" {
   }
 }
 # access map variables
- output "course" {
-   value = var.course["backend"].price
- }
-#output "course" {
-#  value = var.course["backend"].stock
-#}
+# output "course" {
+#   value = var.course["backend"].price
+# }
+output "course" {
+  value = var.course["backend"]
+}
