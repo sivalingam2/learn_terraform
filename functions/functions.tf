@@ -9,5 +9,5 @@ variable "comp" {
   }
 }
 output "comp" {
-  value = lookup(var.comp, "fronted", null )
+  value = lookup(var.comp, each.value["name"], null )
 }
