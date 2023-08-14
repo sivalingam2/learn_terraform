@@ -8,6 +8,6 @@ variable "comp" {
     }
   }
 }
-output "comp" {
-  value = lookup(var.comp, each.value["name"], null )
+output "siva" {
+  value = lookup(var.comp,"name",null )
 }
