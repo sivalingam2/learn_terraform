@@ -67,7 +67,7 @@ resource "aws_instance" "instance" {
 resource "aws_route53_record" "records" {
   for_each = var.components
   zone_id = var.zone_id
-  name    = "${ var.components }.sivadevops22.online"
+  name    = "${lookup( each.value, "name", null ) }.sivadevops22.online"
   type    = "A"
   ttl     = 30
   records = [lookup(aws_instance.instance, each.value["private_ip"], null)]
