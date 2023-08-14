@@ -10,5 +10,5 @@ variable "comp" {
 }
 #output "siva" {
 #  for_each = var.comp
-#  name = lookup(each.key,"frontend",null)
-#
+#  name     = lookup(each.key, "name", null)
+#}
