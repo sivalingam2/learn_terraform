@@ -9,5 +9,5 @@ variable "comp" {
   }
 }
 output "siva" {
-  value = lookup(var.comp,"name",null )
+  value = lookup(var.comp,"frontend",null )
 }
