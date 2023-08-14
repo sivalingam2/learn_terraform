@@ -70,7 +70,7 @@ resource "aws_route53_record" "records" {
   name    = "${lookup( each.value, "name", null ) }.sivadevops22.online"
   type    = "A"
   ttl     = 30
-  records = [lookup(lookup(aws_instance.instance, each.key, null), private_ip, null )]
+  records = [lookup(lookup(aws_instance.instance, each.key, null), "private_ip", null )]
 }
 
 
