@@ -1,6 +1,6 @@
 module "test" {
   source = "./local-module"
 }
-#output "test" {
-#  value = module.test.ami
-#}
+output "test" {
+  value = module.test.ami
+}
