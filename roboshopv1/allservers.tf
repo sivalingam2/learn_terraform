@@ -168,7 +168,7 @@ resource "aws_instance" "dispatch" {
     Name = "dispatch"
   }
 }
-resource "aws_route53_record" "disapcth" {
+resource "aws_route53_record" "dispatch" {
   zone_id = "Z02456543UCI8DLI5F070"
   name    = "dispatch-dev.sivadevops22.online"
   type    = "A"
